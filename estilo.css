@@ -1,0 +1,29 @@
+:root {
+  --bg: #0f1016; --card: #171923; --linha: #2a2d3a; --texto: #e9eaf0; --fraco: #9aa0b0;
+  --rosa: #ff2d95; --roxo: #8a3ffc;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; background: var(--bg); color: var(--texto);
+  font: 16px/1.65 system-ui, "Segoe UI", Roboto, sans-serif;
+}
+a { color: var(--rosa); }
+header {
+  border-bottom: 1px solid var(--linha); padding: 18px 20px;
+}
+header .barra { max-width: 820px; margin: 0 auto; display: flex; align-items: center; gap: 14px; flex-wrap: wrap; }
+header img { width: 44px; height: 44px; border-radius: 50%; border: 2px solid var(--rosa); }
+header .marca { font-weight: 700; font-size: 18px; }
+header nav { margin-left: auto; display: flex; gap: 16px; font-size: 14px; }
+header nav a { color: var(--fraco); text-decoration: none; }
+header nav a:hover, header nav a.atual { color: var(--texto); }
+main { max-width: 820px; margin: 0 auto; padding: 36px 20px 60px; }
+h1 { font-size: 30px; line-height: 1.2; margin: 0 0 8px; }
+h2 { font-size: 20px; margin: 32px 0 8px; }
+.sub { color: var(--fraco); margin: 0 0 24px; }
+.cartao { background: var(--card); border: 1px solid var(--linha); border-radius: 12px; padding: 18px 20px; margin: 16px 0; }
+ul { padding-left: 22px; }
+li { margin: 4px 0; }
+code { background: var(--card); border: 1px solid var(--linha); border-radius: 6px; padding: 1px 6px; font-size: 14px; }
+footer { border-top: 1px solid var(--linha); color: var(--fraco); font-size: 14px; padding: 20px; text-align: center; }
+@media (max-width: 560px) { header nav { margin-left: 0; width: 100%; } h1 { font-size: 25px; } }
